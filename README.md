@@ -102,14 +102,36 @@ nltk.download('stopwords')
 
 ## ▶️ How to Run
 
-1. Ensure Kafka and Zookeeper are running
-2. Ensure MongoDB is running on port 27017
-3. Move all files into one folder with `Bash_Rc.sh`
-4. Launch entire pipeline:
+1️⃣ Ensure the following before you run:
+- Kafka is installed in `~/kafka`
+- MongoDB is running locally on port `27017`
+- All Python files and `Bash_Rc.sh` are placed in `~/Documents`
+
+2️⃣ Give execution permissions to the script (first time only):
+
+```bash
+chmod +x Bash_Rc.sh
+```
+
+3️⃣ Run the full pipeline with:
 
 ```bash
 ./Bash_Rc.sh
 ```
+
+✅ This will automatically:
+- Start **Zookeeper** in a new terminal
+- Start **Kafka Server**
+- Start the **Producer**
+- Start **Consumer 1** (Apriori)
+- Start **Consumer 2** (PCY)
+- Start **Consumer 3** (Anomaly Detection)
+
+🖥️ Each component runs in its own terminal window using `gnome-terminal`
+ℹ️ Press Enter in each terminal after execution starts to close that window
+
+---
+
 
 This starts the producer and all 3 consumers.
 
@@ -127,11 +149,6 @@ This starts the producer and all 3 consumers.
 ├── requirements.txt              # Required libraries
 ├── LICENSE                       # MIT license
 └── README.md                     # You're here!
-## 📊 Data Set
-
-- Download the metadata dataset (12GB) from: 
-  https://cseweb.ucsd.edu/~jmcauley/datasets/amazon_v2/
-- After extraction, the full dataset is approximately 105GB
 
 ```
 
