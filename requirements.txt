@@ -1,0 +1,10 @@
+pandas
+numpy
+tqdm
+swifter
+nltk
+bs4
+streamlit
+pymongo
+kafka-python
+scikit-learn
