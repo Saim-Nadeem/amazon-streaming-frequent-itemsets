@@ -1,4 +1,4 @@
-⚡ Amazon Metadata Streaming: Frequent Itemset Mining with Apriori, PCY & Anomaly Detection
+Amazon Metadata Streaming: Frequent Itemset Mining with Apriori, PCY & Anomaly Detection
 
 [![Python](https://img.shields.io/badge/Built%20with-Python-blue.svg)](https://www.python.org/)
 [![Apache Kafka](https://img.shields.io/badge/Stream-Apache%20Kafka-red.svg)](https://kafka.apache.org/)
